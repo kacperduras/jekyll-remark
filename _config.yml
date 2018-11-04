@@ -1,0 +1,14 @@
+# SEO
+title: jekyll-remark
+description: Template for remark in Jekyll
+
+# Markdown
+markdown: kramdown
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  - presentation

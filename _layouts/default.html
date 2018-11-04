@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    {% include meta.html %}
+
+    <style>
+      {% include style.css %}
+    </style>
+  </head>
+
+  <body>
+    <textarea id="source">
+      {% assign presentation = site.presentation | first %}
+
+      {{ presentation.output }}
+    </textarea>
+
+    {% include script.html %}
+  </body>
+
+</html>

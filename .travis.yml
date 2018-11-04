@@ -1,0 +1,15 @@
+sudo: false
+language: ruby
+
+install: script/bootstrap
+script: script/cibuild
+
+matrix:
+  include:
+    - rvm: 2.6.0-preview2
+    - rvm: 2.5.3
+    - rvm: 2.4.5
+    - rvm: 2.3.8
+
+notfications:
+  email: false
