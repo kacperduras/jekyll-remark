@@ -11,5 +11,15 @@ matrix:
     - rvm: 2.4.5
     - rvm: 2.3.8
 
+deploy:
+  provider: rubygems
+  api_key:
+    secure: "swpbju+9w8RZIYl79t7xHAlctFVjmOiU0lZ2b7//66feZnlsivCb/oOYRRr37uwzscm05fWFZRP1assoC9V/G8S07JZNNRM5RgTyd1aYkzthcJqydZSlgACLJhmaB3VfTHAeYON2TmTMMoGyqmwMXqXhQCVdGga8cWZzNe/QPnpB8gkDgkZmwLkN+Sv8SckaTNPUCaa21chlmGoYg9nwXRe8T58p84N8d5uY0VeJxiJOKOulTAyo+1BFKJjJdiX1FP3urz9Tb1217aAyoQEA2X3/4lU9JPVEc/xWwpknW+p/ebxPA5oIThSbydg0oiZDO30B14eSVhJp8ayeVNaJx/UMHXb4cSz6+t6OfMX2m/2oABbtTsJLy44ol862E1seaOVj53saXl2zKgivWs33qeqy/1kWoJTotaMxoywN9rYb3O9PYPhWGT+1KpH3nGadlvzpudYyPTFJDdUItPpef3bMkaX0mgHafQVvMt0ZJ18DGR7MlUzFsFclkryNlGRnB3GqeK3GPxzpb/oiWVRtxc83o5VjURp0W0GBzs889Nrv6+yrMxqZKzNObW6mm3SAxGYKLZmzgNZYFf7hqrAsuQsAD2cuIdQeFpAo3pWNmvAehjf67NFvIg0gixypLhY/OanGwymitUPRFMTSjhYrBbQfN4JKRBLOliXEGHA42TI="
+  on:
+    rvm: 2.5.3
+    tags: true
+  gem: jekyll-remark
+  gemspec: jekyll-remark.gemspec
+
 notfications:
   email: false
